@@ -21,7 +21,13 @@ if __name__ == '__main__':
     resultado = operacion.suma(sumando1, sumando2)
     print("{0:.2f} + {1:.2f} = {2:.2f}".format(sumando1, sumando2, resultado))
 
-    sumando1="3.10"
-    sumando2=4
-    resultado = operacion.suma(sumando1, sumando2)
-    print("{0:.2f} + {1:.2f} = {2:.2f}".format(sumando1, sumando2, resultado))
+    #sumando1="3.10"
+    #sumando2=4
+    #resultado = operacion.suma(sumando1, sumando2)
+    #print("{0:.2f} + {1:.2f} = {2:.2f}".format(sumando1, sumando2, resultado))
+
+    operacion = Operaciones()
+    minuendo = operacion.ingresoDatos(input("Ingrese el minuendo     : "))
+    sustraendo = operacion.ingresoDatos(input("Ingrese el sustraendo : "))
+    resultado = operacion.resta(minuendo, sustraendo)
+    print("{0:.2f} - {1:.2f} = {2:.2f}".format(minuendo, sustraendo, resultado))

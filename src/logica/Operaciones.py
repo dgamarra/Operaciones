@@ -5,6 +5,12 @@ class Operaciones():
                 raise TypeError("No es un int ni un float")
         return sumando1+sumando2
 
+    def resta(self, minuendo, sustraendo):
+        for n in (minuendo, sustraendo):
+            if not isinstance(n,int) and not isinstance(n,float):
+                raise TypeError("No es un int ni un float")
+        return minuendo - sustraendo
+
     def ingresoDatos(self,dato):
         if (not type(dato) is float) or (not type(dato) is int):
             try:
